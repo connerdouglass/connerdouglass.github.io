@@ -1,3 +1,0 @@
-# connerdouglass.github.io
-
-
