@@ -39,6 +39,10 @@ jobs:
         run: |
           npm run build
 
+      # Copy all files from the build folder to the master branch
       - name: Deploy
-        run: |
-          node ./gh-pages.js
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
