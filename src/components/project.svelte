@@ -26,6 +26,7 @@
 </div>
 
 <style lang="scss">
+    @use "sass:math";
     .project
     {
         position: relative;
@@ -55,6 +56,7 @@
         > .tags
         {
             margin-top: 20px;
+            line-height: 200%;
 
             > .tag
             {
@@ -66,7 +68,7 @@
                 padding: 0 $tag-height * 0.5;
                 height: $tag-height;
                 line-height: $tag-height;
-                border-radius: $tag-height / 2;
+                border-radius: math.div($tag-height, 2);
                 background-color: var(--background-color);
                 margin-right: 8px;
             }

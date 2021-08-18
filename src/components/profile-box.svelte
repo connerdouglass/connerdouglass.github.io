@@ -39,6 +39,7 @@
 </div>
 
 <style lang="scss">
+	@use "sass:math";
 	.profile-box
 	{
 		text-align: center;
@@ -52,11 +53,12 @@
 			display: inline-block;
 			width: $pic-size;
 			height: $pic-size;
-			border-radius: $pic-size / 2;
+			border-radius: math.div($pic-size, 2);
 			background-size: cover;
 			background-position: center center;
 			background-repeat: no-repeat;
-			background-image: url('/cdd.png');
+			// background-image: url('/cdd.png');
+			background-color: #5C83D9;
 		}
 
 		h1
