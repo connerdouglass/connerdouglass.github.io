@@ -50,8 +50,7 @@ export const WorkProjects: IProject[] = [
         period: '2017',
         url: undefined,
         description: [
-            'CustomRealms was a platform for building multiplayer Minecraft server plugins using TypeScript. It featured a fully web-based coding IDE, which helped thousands of young people learn to code.',
-            'The CustomRealms platform is currently in the process of being open sourced.',
+            'As an intern at Google, I contributed to a major update to the AdWords platform. My work spanned the whole stack: frontend, backend, and unit testing',
         ],
         images: [],
         tags: [
@@ -68,8 +67,8 @@ export const WorkProjects: IProject[] = [
         period: '2016',
         url: undefined,
         description: [
-            'CustomRealms was a platform for building multiplayer Minecraft server plugins using TypeScript. It featured a fully web-based coding IDE, which helped thousands of young people learn to code.',
-            'The CustomRealms platform is currently in the process of being open sourced.',
+            'I spent an extended 8-month internship at Apple building internal web applications for the AppleCare teams.',
+            'Among these projects, the largest two were a log aggregation system, which processed millions of logs, and an issue tracker which was used by multiple teams at the company.',
         ],
         images: [],
         tags: [
