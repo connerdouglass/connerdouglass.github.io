@@ -1,6 +1,6 @@
-import type { IProject } from "./project";
+import type { IProject } from "../components/project";
 
-export const projects: IProject[] = [
+export const WorkProjects: IProject[] = [
     {
         title: 'Spire Delta',
         subtitle: 'Founder, CTO',
@@ -42,6 +42,40 @@ export const projects: IProject[] = [
             'java',
             'typescript',
             'angular',
+        ],
+    },
+    {
+        title: 'Google',
+        subtitle: 'Software Engineering Intern',
+        period: '2017',
+        url: undefined,
+        description: [
+            'CustomRealms was a platform for building multiplayer Minecraft server plugins using TypeScript. It featured a fully web-based coding IDE, which helped thousands of young people learn to code.',
+            'The CustomRealms platform is currently in the process of being open sourced.',
+        ],
+        images: [],
+        tags: [
+            'java',
+            'rpc',
+            'angular',
+            'dart',
+            'bazel',
+        ],
+    },
+    {
+        title: 'Apple',
+        subtitle: 'Software Engineering Intern',
+        period: '2016',
+        url: undefined,
+        description: [
+            'CustomRealms was a platform for building multiplayer Minecraft server plugins using TypeScript. It featured a fully web-based coding IDE, which helped thousands of young people learn to code.',
+            'The CustomRealms platform is currently in the process of being open sourced.',
+        ],
+        images: [],
+        tags: [
+            'php',
+            'mysql',
+            'javascript',
         ],
     },
 ];

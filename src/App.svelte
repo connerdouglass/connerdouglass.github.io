@@ -1,8 +1,10 @@
 <script lang="ts">
 
 	import ProfileBox from './components/profile-box.svelte';
-	import { projects } from './components/projects';
+	import { WorkProjects } from './data/work_projects';
 	import ProjectsList from './components/projects-list.svelte';
+	import { Repos } from './data/open_source_repos';
+	import ReposList from './components/repos-list.svelte';
 
 </script>
 
@@ -18,7 +20,11 @@
 		</div>
 		<div class="section">
 			<h3>Work &amp; Projects</h3>
-			<ProjectsList projects={projects}></ProjectsList>
+			<ProjectsList projects={WorkProjects}></ProjectsList>
+		</div>
+		<div class="section">
+			<h3>Open Source</h3>
+			<ReposList repos={Repos}></ReposList>
 		</div>
 	</div>
 </div>
