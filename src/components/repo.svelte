@@ -56,7 +56,10 @@
             line-height: 140%;
             font-size: 90%;
             font-weight: 400;
-            min-height: 40px;
+
+            @media screen and (min-width: 1000px) {
+                min-height: 40px;
+            }
         }
 
         > .tags
