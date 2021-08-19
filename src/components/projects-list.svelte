@@ -36,7 +36,7 @@
             subtitle: undefined,
             description: [
                 'CustomRealms was a platform for building multiplayer Minecraft server plugins using TypeScript. It featured a fully web-based coding IDE, which helped thousands of young people learn to code.',
-                'Additionally, CustomRealms featured a complete Minecraft server hosting platform, enabling our customers to start playing their custom plugins with their friends.',
+                'The CustomRealms platform is currently in the process of being open sourced.',
             ],
             images: [
                 '/gallery/customrealms/ide.png',
