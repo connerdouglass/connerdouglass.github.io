@@ -2,6 +2,8 @@
     
     export let title: string;
     export let subtitle: string | undefined;
+    export let period: string | undefined;
+    export let url: string | undefined;
     export let images: string[];
     export let description: string[];
     export let tags: string[];
@@ -10,10 +12,27 @@
 
 <div class="project">
     <div class="top">
-        <div class="title">{ title }</div>
-        {#if subtitle}
-            <div class="subtitle">{ subtitle }</div>
-        {/if}
+        <div class="meta-row">
+            <div class="left">
+                <div class="title">
+                    {#if url}
+                        <a
+                            target="_blank"
+                            href={url}>{ title }</a>
+                    {:else}
+                        { title }
+                    {/if}
+                </div>
+                {#if subtitle}
+                    <div class="subtitle">{ subtitle }</div>
+                {/if}
+            </div>
+            {#if period}
+                <div class="right">
+                    { period }
+                </div>
+            {/if}
+        </div>
         {#if description.length > 0}
             <div class="description">
                 {#each description as para}
@@ -54,22 +73,49 @@
         {
             padding: 20px;
 
-            > .title
+            > .meta-row
             {
-                font-size: 110%;
-                font-weight: 600;
-                font-family: 'Roboto Mono';
-                margin-bottom: 12px;
-            }
+                display: flex;
 
-            > .subtitle
-            {
-                font-size: 85%;
-                font-weight: 500;
-                // text-transform: uppercase;
-                margin-top: -8px;
-                margin-bottom: 12px;
-                opacity: 0.8;
+                > .left
+                {
+                    flex-grow: 1;
+                    flex-shrink: 1;
+
+                    > .title
+                    {
+                        font-size: 110%;
+                        font-weight: 600;
+                        font-family: 'Roboto Mono';
+                        margin-bottom: 12px;
+
+                        > a
+                        {
+                            color: inherit;
+                        }
+                    }
+
+                    > .subtitle
+                    {
+                        font-size: 85%;
+                        font-weight: 500;
+                        // text-transform: uppercase;
+                        margin-top: -8px;
+                        margin-bottom: 12px;
+                        opacity: 0.8;
+                    }
+                }
+
+                > .right
+                {
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    text-align: right;
+                    font-size: 90%;
+                    font-weight: 600;
+                    font-style: italic;
+                    opacity: 0.8;
+                }
             }
 
             > .description
@@ -123,7 +169,7 @@
             }
 
             /* Handle on hover */
-            &::-webkit-scrollbar-thumb:active {
+            &::-webkit-scrollbar-thumb:hover {
                 background-color: rgba(var(--primary-font-color-rgb), 0.8);
             }
 
@@ -134,7 +180,6 @@
             img
             {
                 border-radius: 6px;
-                border: 3px solid rgba(var(--primary-font-color-rgb), 0.5);
                 height: 120px;
 
                 @media screen and (max-width: 800px) {
@@ -144,7 +189,7 @@
 
                 &:not(:last-child)
                 {
-                    margin-right: 10px;
+                    margin-right: 16px;
                 }
             }
         }
