@@ -58,7 +58,13 @@
             font-weight: 400;
 
             @media screen and (min-width: 1000px) {
-                min-height: 40px;
+                height: 40px;
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: -webkit-box !important;
+                -webkit-box-orient: vertical;
             }
         }
 

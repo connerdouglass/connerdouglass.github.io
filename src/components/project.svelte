@@ -1,4 +1,7 @@
 <script lang="ts">
+
+    import { FontAwesomeIcon } from 'fontawesome-svelte';
+    import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
     
     export let title: string;
     export let subtitle: string | undefined;
@@ -18,7 +21,12 @@
                     {#if url}
                         <a
                             target="_blank"
-                            href={url}>{ title }</a>
+                            href={url}>
+                            <span>{ title }</span>
+                            <span class="link">
+                                <FontAwesomeIcon icon={faExternalLinkSquareAlt} />
+                            </span>
+                        </a>
                     {:else}
                         { title }
                     {/if}
@@ -92,6 +100,16 @@
                         > a
                         {
                             color: inherit;
+                        }
+
+                        .link
+                        {
+                            opacity: 0.5;
+
+                            &:hover
+                            {
+                                opacity: 1;
+                            }
                         }
                     }
 

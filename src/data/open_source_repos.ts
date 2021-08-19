@@ -25,4 +25,12 @@ export const Repos: IRepo[] = [
             'golang',
         ],
     },
+    {
+        title: 'go-watchdir',
+        url: 'https://github.com/spiretechnology/go-watchdir',
+        description: 'Library for monitoring changes to files in a directory',
+        tags: [
+            'golang',
+        ],
+    },
 ];
