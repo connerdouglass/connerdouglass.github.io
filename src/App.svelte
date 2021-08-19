@@ -26,6 +26,9 @@
 			<h3>Open Source</h3>
 			<ReposList repos={Repos}></ReposList>
 		</div>
+		<div class="copyright">
+			&copy; { new Date().getFullYear() } Conner Douglass
+		</div>
 	</div>
 </div>
 
@@ -58,6 +61,15 @@
 					line-height: 140%;
 					font-size: 95%;
 				}
+			}
+
+			> .copyright
+			{
+				border-top: 2px solid rgba(var(--primary-font-color-rgb), 0.2);
+				padding: 20px 0;
+				text-align: center;
+				font-size: 80%;
+				color: rgba(var(--primary-font-color-rgb), 0.7);
 			}
 		}
 

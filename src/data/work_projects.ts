@@ -27,7 +27,7 @@ export const WorkProjects: IProject[] = [
     {
         title: 'CustomRealms',
         subtitle: 'Founder',
-        period: undefined,
+        period: '2020',
         url: 'https://github.com/customrealms',
         description: [
             'CustomRealms was a platform for building multiplayer Minecraft server plugins using TypeScript. It featured a fully web-based coding IDE, which helped thousands of young people learn to code.',
