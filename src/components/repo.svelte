@@ -38,7 +38,7 @@
         display: block;
         color: var(--primary-font-color);
 
-        @media screen and (min-width: 800px) {
+        @media screen and (min-width: 1000px) {
             height: $repo-height;
         }
 
