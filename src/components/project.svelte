@@ -1,6 +1,7 @@
 <script lang="ts">
     
     export let title: string;
+    export let subtitle: string | undefined;
     export let images: string[];
     export let description: string[];
     export let tags: string[];
@@ -10,6 +11,9 @@
 <div class="project">
     <div class="top">
         <div class="title">{ title }</div>
+        {#if subtitle}
+            <div class="subtitle">{ subtitle }</div>
+        {/if}
         {#if description.length > 0}
             <div class="description">
                 {#each description as para}
@@ -56,6 +60,16 @@
                 font-weight: 600;
                 font-family: 'Roboto Mono';
                 margin-bottom: 12px;
+            }
+
+            > .subtitle
+            {
+                font-size: 85%;
+                font-weight: 500;
+                // text-transform: uppercase;
+                margin-top: -8px;
+                margin-bottom: 12px;
+                opacity: 0.8;
             }
 
             > .description

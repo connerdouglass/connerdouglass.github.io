@@ -16,7 +16,7 @@
 			<p>I'm the co-founder and CTO of <a href="https://spiretechnology.com">Spire Technology</a>, where we build a video transcoding and streaming platform used by many of the biggest television shows.</p>
 		</div>
 		<div class="section">
-			<h3>Projects</h3>
+			<h3>Work &amp; Projects</h3>
 			<ProjectsList></ProjectsList>
 		</div>
 	</div>
