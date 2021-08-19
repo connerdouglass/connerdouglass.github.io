@@ -69,6 +69,7 @@
 				flex-grow: 1;
 				flex-shrink: 1;
 				padding-left: 20px;
+				min-width: 0;
 			}
 		}
 	}

@@ -108,7 +108,24 @@
         {
             padding: 20px;
             background-color: rgba(var(--background-color-rgb), 0.5);
-            line-height: 200%;
+            white-space: nowrap;
+            overflow-x: auto;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+            
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(var(--primary-font-color-rgb), 0.5);
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:active {
+                background-color: rgba(var(--primary-font-color-rgb), 0.8);
+            }
 
             @media screen and (max-width: 800px) {
                 text-align: center;
@@ -123,22 +140,11 @@
                 @media screen and (max-width: 800px) {
                     width: 40%;
                     height: auto;
-                    &:nth-child(odd)
-                    {
-                        margin-right: 10px;
-                    }
-
-                    &:nth-child(even)
-                    {
-                        margin-left: 10px;
-                    }
                 }
 
-                @media screen and (min-width: 800px) {
-                    &:not(:last-child)
-                    {
-                        margin-right: 10px;
-                    }
+                &:not(:last-child)
+                {
+                    margin-right: 10px;
                 }
             }
         }
