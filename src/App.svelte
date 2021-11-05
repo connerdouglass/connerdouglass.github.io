@@ -6,6 +6,10 @@
 	import { Repos } from './data/open_source_repos';
 	import ReposList from './components/repos-list.svelte';
 
+	const started_coding_age = 9;
+	const started_coding_year = 1996 + started_coding_age;
+	const building_software_years = (new Date()).getFullYear() - started_coding_year;
+
 </script>
 
 <div class="app">
@@ -15,8 +19,9 @@
 	<div class="right">
 		<div class="section">
 			<h3>About</h3>
-			<p>My name is Conner. I'm a systems engineer and full-stack web developer, mostly doing work in Go, TypeScript, and C. I've been building software for over 15 years.</p>
-			<p>I'm the co-founder and CTO of <a href="https://spiretechnology.com">Spire Technology</a>, where we build a video transcoding and streaming platform used by many of the biggest television shows.</p>
+			<p>My name is Conner. I'm a systems engineer and full-stack software engineer, mostly doing work in Go, TypeScript, and C. I've been building software for { building_software_years } years.</p>
+			<p>I am a backend software engineer at <a href="https://tanium.com" target="_blank">Tanium</a>, building cloud web services.</p>
+			<p>I'm also the co-founder and CTO of <a href="https://spiretechnology.com" target="_blank">Spire Technology</a>, where we build a video transcoding and streaming platform used by many of the biggest television shows.</p>
 		</div>
 		<div class="section">
 			<h3>Work &amp; Projects</h3>

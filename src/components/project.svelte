@@ -138,6 +138,8 @@
 
             > .description
             {
+                margin-bottom: 20px;
+
                 > p
                 {
                     color: rgba(var(--primary-font-color-rgb), 0.7);
@@ -148,7 +150,6 @@
 
             > .tags
             {
-                margin-top: 20px;
                 line-height: 200%;
 
                 > .tag

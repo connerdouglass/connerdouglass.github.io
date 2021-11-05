@@ -2,6 +2,18 @@ import type { IProject } from "../components/project";
 
 export const WorkProjects: IProject[] = [
     {
+        title: 'Tanium',
+        subtitle: 'Software Engineer',
+        period: '11/2021 –',
+        url: 'https://tanium.com',
+        description: [],
+        images: [],
+        tags: [
+            'golang',
+            'nodejs',
+        ],
+    },
+    {
         title: 'Spire Delta',
         subtitle: 'Founder, CTO',
         period: '08/2019 –',
