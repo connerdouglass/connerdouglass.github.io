@@ -6,11 +6,13 @@ export const WorkProjects: IProject[] = [
         subtitle: 'Software Engineer',
         period: '11/2021 –',
         url: 'https://tanium.com',
-        description: [],
+        description: [
+            'I am currently a software engineer at Tanium doing full-stack work, with a focus on backend development.'
+        ],
         images: [],
         tags: [
             'golang',
-            'nodejs',
+            'docker',
         ],
     },
     {
@@ -39,11 +41,10 @@ export const WorkProjects: IProject[] = [
     {
         title: 'CustomRealms',
         subtitle: 'Founder',
-        period: '2020',
+        period: '2020 –',
         url: 'https://github.com/customrealms',
         description: [
-            'CustomRealms was a platform for building multiplayer Minecraft server plugins using TypeScript. It featured a fully web-based coding IDE, which helped thousands of young people learn to code.',
-            'The CustomRealms platform is currently in the process of being open sourced.',
+            'CustomRealms is an open-source TypeScript framework for building Minecraft server plugins. It comes with a CLI to easily create and compile projects.',
         ],
         images: [
             '/gallery/customrealms/ide.png',
