@@ -3,11 +3,11 @@ import type { IProject } from "../components/project";
 export const WorkProjects: IProject[] = [
     {
         title: 'Tanium',
-        subtitle: 'Software Engineer',
+        subtitle: 'Senior Software Engineer',
         period: '11/2021 –',
         url: 'https://tanium.com',
         description: [
-            'I am currently a software engineer at Tanium doing full-stack work, with a focus on backend development.'
+            'I am currently a senior software engineer at Tanium doing full-stack work, with a focus on backend development.'
         ],
         images: [],
         tags: [
