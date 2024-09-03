@@ -1,10 +1,10 @@
 <script lang="ts">
 
-	import ProfileBox from './components/profile-box.svelte';
-	import { WorkProjects } from './data/work_projects';
-	import ProjectsList from './components/projects-list.svelte';
-	import { Repos } from './data/open_source_repos';
-	import ReposList from './components/repos-list.svelte';
+	import ProfileBox from '../components/profile-box.svelte';
+	import { WorkProjects } from '../data/work_projects';
+	import ProjectsList from '../components/projects-list.svelte';
+	import { Repos } from '../data/open_source_repos';
+	import ReposList from '../components/repos-list.svelte';
 
 	const started_coding_age = 9;
 	const started_coding_year = 1996 + started_coding_age;
