@@ -1,16 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset='utf-8'>
-		<meta name='viewport' content='width=device-width,initial-scale=1'>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<title>Conner Douglass</title>
 
-		<link rel='icon' type='image/png' href='/favicon.png'>
-		<link rel='stylesheet' href='/global.css'>
-		<link rel='stylesheet' href='/build/bundle.css'>
+		<link rel="icon" href="./favicon.png" />
 
-		<script defer src='/build/bundle.js'></script>
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BSazYH82.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.Cu2nvYLq.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BxLpWqHu.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.D1kg6VVB.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.C7rnCF48.js">
 	</head>
-	<body></body>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_bnaiu3 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BSazYH82.js"),
+						import("./_app/immutable/entry/app.D1kg6VVB.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
