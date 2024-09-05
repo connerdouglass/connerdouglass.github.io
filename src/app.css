@@ -3,30 +3,27 @@
 @import url('https://cdn.jsdelivr.net/npm/svelte-material-ui@4.0.0/bare.min.css');
 
 html,
-body
-{
+body {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 
-body
-{
+body {
 	margin: 0;
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+		'Helvetica Neue', sans-serif;
 	background-color: var(--background-color);
 	color: var(--primary-font-color);
 }
 
-*
-{
+* {
 	box-sizing: border-box;
 }
 
-a
-{
+a {
 	text-decoration: none;
-	color: #08F;
+	color: #08f;
 	font-weight: 600;
 }
