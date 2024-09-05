@@ -11,7 +11,7 @@ export const Work: IProject[] = [
 		],
 		logo: '/logos/tanium.svg',
 		images: [],
-		tags: ['golang', 'docker']
+		tags: ['golang', 'typescript', 'github actions']
 	},
 	{
 		title: 'Spire Technology',
