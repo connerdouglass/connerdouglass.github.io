@@ -15,7 +15,7 @@ export const Work: IProject[] = [
 	},
 	{
 		title: 'Spire Technology',
-		subtitle: 'Founder & CTO',
+		subtitle: 'CEO & Founder',
 		period: '08/2019 – now',
 		url: 'https://spiretechnology.com',
 		description: [
